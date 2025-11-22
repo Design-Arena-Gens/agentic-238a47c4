@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manuel de Gestion - Service de Veille Médiatique Audiovisuelle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Manuel Opérationnel</p>
+        <h1>Gestion d’un Service de Veille Médiatique Audiovisuelle</h1>
+        <p class="hero__subtitle">
+          Cadre complet pour concevoir, exploiter et optimiser un service de veille
+          des médias audiovisuels afin de fournir des insights fiables, exploitables
+          et conformes aux obligations réglementaires.
+        </p>
+        <a class="hero__cta" href="#vision">Commencer</a>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Table des matières">
+      <div class="toc__inner">
+        <h2>Structure du manuel</h2>
+        <ol>
+          <li><a href="#vision">Vision &amp; missions</a></li>
+          <li><a href="#organisation">Organisation &amp; gouvernance</a></li>
+          <li><a href="#processus">Processus opérationnels</a></li>
+          <li><a href="#outils">Outils &amp; infrastructure</a></li>
+          <li><a href="#qualite">Qualité &amp; indicateurs</a></li>
+          <li><a href="#conformite">Conformité &amp; sécurité</a></li>
+          <li><a href="#crise">Gestion de crise &amp; communication</a></li>
+          <li><a href="#plan-evolution">Plan d’évolution</a></li>
+          <li><a href="#annexes">Annexes</a></li>
+        </ol>
+      </div>
+    </nav>
+
+    <main>
+      <section id="vision" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Cadre stratégique</p>
+          <h2>Vision &amp; missions</h2>
+        </div>
+        <div class="section__grid">
+          <article>
+            <h3>Objectif global</h3>
+            <p>
+              Offrir une surveillance continue des médias audiovisuels (TV, radio,
+              plateformes numériques) pour détecter, analyser et diffuser des
+              informations pertinentes aux parties prenantes internes et externes.
+            </p>
+          </article>
+          <article>
+            <h3>Axes prioritaires</h3>
+            <ul>
+              <li>Détection précoce des signaux faibles impactant la réputation.</li>
+              <li>Analyse contextualisée des contenus diffusés et tendances.</li>
+              <li>
+                Production de rapports décisionnels alimentant les stratégies de
+                communication, marketing et conformité.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Livrables clés</h3>
+            <ul>
+              <li>Alertes en temps réel sur incidents critiques.</li>
+              <li>Veilles thématiques quotidiennes/hebdomadaires.</li>
+              <li>Rapports consolidés mensuels et tableaux de bord interactifs.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Parties prenantes</h3>
+            <ul>
+              <li>Direction communication et relations publiques.</li>
+              <li>Équipes marketing, produit et juridique.</li>
+              <li>Direction générale et gouvernance de crise.</li>
+              <li>Clients externes (pour un modèle agence).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="organisation" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Structure opérationnelle</p>
+          <h2>Organisation &amp; gouvernance</h2>
+        </div>
+        <div class="section__grid">
+          <article>
+            <h3>Modèle organisationnel</h3>
+            <ul>
+              <li>
+                <strong>Direction de la veille :</strong> définit stratégie, budgets,
+                partenariats et politique de diffusion.
+              </li>
+              <li>
+                <strong>Cellule d’analyse :</strong> analystes médias et data
+                scientists travaillant en binôme.
+              </li>
+              <li>
+                <strong>Équipe technique :</strong> ingénieurs systèmes, développeurs,
+                spécialistes IA/ML.
+              </li>
+              <li>
+                <strong>Support &amp; relation client :</strong> gestion des demandes,
+                formation et animation des utilisateurs.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Rôles &amp; responsabilités</h3>
+            <ul>
+              <li>
+                <strong>Responsable veille :</strong> pilote la roadmap, valide les
+                analyses critiques, assure la conformité.
+              </li>
+              <li>
+                <strong>Analyste senior :</strong> supervise la qualité, modère les
+                insights, coordonne les crises.
+              </li>
+              <li>
+                <strong>Analyste junior :</strong> collecte, indexe, rédige les
+                synthèses, escalade les alertes.
+              </li>
+              <li>
+                <strong>Data engineer :</strong> maintient les pipelines d’ingestion,
+                garantit la disponibilité et l’intégrité des données.
+              </li>
+              <li>
+                <strong>UX rédacteur :</strong> conçoit la mise en récit des rapports,
+                anime les newsletters et dashboards.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Mécanismes de gouvernance</h3>
+            <ul>
+              <li>Comité stratégique mensuel avec décideurs clés.</li>
+              <li>Revues opérationnelles hebdomadaires (qualité, incidents, innovations).</li>
+              <li>Processus d’escalade documenté (SLA par type d’incident).</li>
+              <li>Veille technologique trimestrielle pour anticiper les évolutions.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Gestion des compétences</h3>
+            <ul>
+              <li>Plan de formation initiale et continue (analyse media, IA, déontologie).</li>
+              <li>Veille métier partagée via un knowledge hub interne.</li>
+              <li>Mentorat croisé analyste/data pour hybridation des compétences.</li>
+              <li>Certification interne annuelle sur procédures critiques.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="processus" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Exécution</p>
+          <h2>Processus opérationnels</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <div class="timeline__bullet">1</div>
+            <div>
+              <h3>Briefing &amp; cadrage</h3>
+              <p>
+                Formaliser les axes de veille, mots-clés, langues, zones géographiques,
+                émetteurs prioritaires, formats (JT, magazines, podcasts, streaming).
+              </p>
+              <ul>
+                <li>Collecte d’exigences via formulaires standards.</li>
+                <li>Validation des objectifs et indicateurs avec le sponsor.</li>
+                <li>Définition des règles de confidentialité et diffusion.</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="timeline__bullet">2</div>
+            <div>
+              <h3>Collecte &amp; ingestion</h3>
+              <p>
+                Enregistrer les flux audiovisuels (live et replay), convertir l’audio
+                en texte (speech-to-text), indexer les métadonnées (chaîne, horaire,
+                audience estimée).
+              </p>
+              <ul>
+                <li>Automatisation via pipeline ETL et API partenaires.</li>
+                <li>Horodatage précis et stockage chiffré.</li>
+                <li>Contrôles d’intégrité (durée, qualité sonore, absence de coupures).</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="timeline__bullet">3</div>
+            <div>
+              <h3>Filtrage &amp; classification</h3>
+              <p>
+                Classer les contenus par thèmes, tonalité, gravité. Combiner filtres
+                automatiques (NLP, sentiment analysis) et revue manuelle.
+              </p>
+              <ul>
+                <li>Modèles NLP multilingues adaptés à l’audiovisuel.</li>
+                <li>Score de pertinence et routage automatique pour revue humaine.</li>
+                <li>Mise à jour des règles à partir du feedback analyste.</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="timeline__bullet">4</div>
+            <div>
+              <h3>Analyse &amp; validation</h3>
+              <p>
+                Les analystes confirment les signaux, évaluent le contexte,
+                identifient les impacts potentiels et rédigent synthèses + insights.
+              </p>
+              <ul>
+                <li>Grilles d’analyse (importance, crédibilité, propagation).</li>
+                <li>Validation double niveau pour alertes critiques.</li>
+                <li>Historisation des décisions pour auditabilité.</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="timeline__bullet">5</div>
+            <div>
+              <h3>Diffusion &amp; reporting</h3>
+              <p>
+                Publication multicanale : rapports PDF/HTML, dashboards, notifications
+                mobiles, intégrations Slack/Teams.
+              </p>
+              <ul>
+                <li>Templates normalisés et personnalisations par segment.</li>
+                <li>Indexation dans un portail client avec historique.</li>
+                <li>SLA de diffusion (ex : alertes < 30 min après détection).</li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <div class="timeline__bullet">6</div>
+            <div>
+              <h3>Rétroaction &amp; amélioration</h3>
+              <p>
+                Collecter les retours utilisateurs, ajuster les veilles, déployer de
+                nouveaux connecteurs ou modèles IA, documenter les bonnes pratiques.
+              </p>
+              <ul>
+                <li>Revues mensuelles avec KPI et plan d’actions.</li>
+                <li>Expérimentations contrôlées (A/B testing de tonalité).</li>
+                <li>Cartographie des risques émergents partagée aux décideurs.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="outils" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Systèmes &amp; technologie</p>
+          <h2>Outils &amp; infrastructure</h2>
+        </div>
+        <div class="section__grid">
+          <article>
+            <h3>Architecture cible</h3>
+            <ul>
+              <li>Ingestion via API broadcast, enregistreurs IP, sondes OTT.</li>
+              <li>Stockage cloud redondé (objets + base de données métadonnées).</li>
+              <li>Pipelines de transcription &amp; NLP conteneurisés (Docker/Kubernetes).</li>
+              <li>Data warehouse pour l’analytique et BI self-service.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Outils analytiques</h3>
+            <ul>
+              <li>Moteurs de recherche textuelle/vidéo (Elasticsearch, Pinecone).</li>
+              <li>Traitement linguistique (spaCy, Hugging Face, Whisper).</li>
+              <li>Classification et scoring via modèles supervisés/LLM.</li>
+              <li>Dashboards interactifs (Looker Studio, Metabase, Superset).</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Automatisation &amp; workflow</h3>
+            <ul>
+              <li>Orchestration (Airflow, Prefect) pour gérer les jobs.</li>
+              <li>RPA/IA pour extraction de transcripts sur vidéos replay.</li>
+              <li>Connecteurs API pour CRM, PRM, SI interne.</li>
+              <li>CI/CD pour déployer modèles et scripts de veille.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Stratégie de données</h3>
+            <ul>
+              <li>Catalogue de données et glossaire métier.</li>
+              <li>Politique de rétention et suppression (RGPD).</li>
+              <li>Données d’entraînement anonymisées et stockées à part.</li>
+              <li>Contrôles d’accès granulaire (RBAC/ABAC).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="qualite" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Supervision</p>
+          <h2>Qualité &amp; indicateurs</h2>
+        </div>
+        <div class="section__grid section__grid--wide">
+          <article>
+            <h3>KPI principaux</h3>
+            <ul>
+              <li>Taux de couverture des chaînes/émissions ciblées.</li>
+              <li>Délai moyen entre diffusion et alerte.</li>
+              <li>Précision de classification (pertinence/tonalité).</li>
+              <li>Satisfaction utilisateurs (NPS) et taux d’adoption.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Contrôles qualité</h3>
+            <ul>
+              <li>Relecture double des alertes critiques.</li>
+              <li>Échantillonnage hebdomadaire des transcripts.</li>
+              <li>Audit trimestriel des modèles IA (biais, dérive).</li>
+              <li>Tests automatiques des connecteurs médias.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Amélioration continue</h3>
+            <ul>
+              <li>Tableaux de bord qualité partagés en temps réel.</li>
+              <li>Rétrospectives d’incidents et plans correctifs.</li>
+              <li>Veille concurrentielle pour benchmarker les pratiques.</li>
+              <li>Programme d’innovation (POC trimestriels).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="conformite" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Cadre légal</p>
+          <h2>Conformité &amp; sécurité</h2>
+        </div>
+        <div class="section__grid">
+          <article>
+            <h3>Référentiels</h3>
+            <ul>
+              <li>RGPD et lois nationales sur la protection des données.</li>
+              <li>Législation droit d’auteur, citation et courte citation.</li>
+              <li>Code de déontologie interne et charte éthique.</li>
+              <li>Normes sécurité ISO/IEC 27001 ou équivalent.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Mesures de sécurité</h3>
+            <ul>
+              <li>Chiffrement des flux et des données au repos.</li>
+              <li>Authentification forte et journalisation des accès.</li>
+              <li>Segmentation réseau et durcissement des serveurs.</li>
+              <li>Tests de pénétration annuels et scans réguliers.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Gestion des risques</h3>
+            <ul>
+              <li>Cartographie des risques opérationnels et technologiques.</li>
+              <li>Plan de continuité (PCA) et reprise (PRA) documentés.</li>
+              <li>Surveillance des dérives algorithmiques (équité, biais).</li>
+              <li>Clausier contractuel avec fournisseurs et clients.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Documentation &amp; audits</h3>
+            <ul>
+              <li>Registre des traitements et analyses d’impact.</li>
+              <li>Politique de conservation et suppression des archives.</li>
+              <li>Traçabilité des décisions clés et modifications.</li>
+              <li>Audits croisés annuels (juridique, IT, métier).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="crise" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Gestion d’incidents</p>
+          <h2>Gestion de crise &amp; communication</h2>
+        </div>
+        <div class="section__grid section__grid--wide">
+          <article>
+            <h3>Typologie des incidents</h3>
+            <ul>
+              <li>Crises médiatiques (bad buzz, accusations, scandales).</li>
+              <li>Incidents techniques (perte de flux, panne transcription).</li>
+              <li>Fuite d’information ou violation de confidentialité.</li>
+              <li>Non-conformité réglementaire ou déontologique.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Procédures d’escalade</h3>
+            <ul>
+              <li>Détection automatique + validation analyste.</li>
+              <li>Notification immédiate du responsable veille.</li>
+              <li>Activation du plan de crise selon gravité (RAG).</li>
+              <li>Point de situation toutes les 30 minutes pendant la phase active.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Communication</h3>
+            <ul>
+              <li>Canaux dédiés (war room Teams/Slack, hotline).</li>
+              <li>Templates d’alerte et de communiqué interne/externe.</li>
+              <li>Coordination avec le service communication corporate.</li>
+              <li>Beeps de validation juridique avant diffusion externe.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Retour d’expérience</h3>
+            <ul>
+              <li>Rapport de post-mortem sous 5 jours ouvrés.</li>
+              <li>Mise à jour des plans de réponse et des playbooks.</li>
+              <li>Formation ciblée si défaillance humaine identifiée.</li>
+              <li>Capitalisation dans la base de connaissances.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="plan-evolution" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Roadmap</p>
+          <h2>Plan d’évolution</h2>
+        </div>
+        <div class="roadmap">
+          <article>
+            <h3>Perspective 6 mois</h3>
+            <ul>
+              <li>Automatisation de la classification tonalité multilingue.</li>
+              <li>Ajout de dashboards interactifs personnalisables.</li>
+              <li>Renforcement du monitoring qualité (alerting proactif).</li>
+              <li>Programme de formation avancée en data storytelling.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Perspective 12 mois</h3>
+            <ul>
+              <li>Intégration de la reconnaissance d’images (logos, visages).</li>
+              <li>Déploiement d’assistants IA pour résumés automatiques.</li>
+              <li>Extension internationale (nouveaux marchés/chaînes).</li>
+              <li>Certification ISO/IEC 27001 finalisée.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Perspective 24 mois</h3>
+            <ul>
+              <li>Plateforme de veille multimodale (audio, vidéo, social, presse).</li>
+              <li>Prédiction d’impacts réputationnels via modèles prédictifs.</li>
+              <li>Offre conseil &amp; benchmark sectoriel enrichie.</li>
+              <li>Automatisation avancée de la traduction et du sous-titrage.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="annexes" class="section">
+        <div class="section__header">
+          <p class="section__eyebrow">Annexes</p>
+          <h2>Templates &amp; ressources</h2>
+        </div>
+        <div class="annexes">
+          <article>
+            <h3>Checklist lancement de veille</h3>
+            <ol>
+              <li>Recueillir le brief et valider la charte éditoriale.</li>
+              <li>Configurer les sources médias et accès API.</li>
+              <li>Mettre en place les tableaux de bord et alertes.</li>
+              <li>Former les analystes sur les thématiques du client.</li>
+              <li>Programmer la revue post-lancement à J+7.</li>
+            </ol>
+          </article>
+          <article>
+            <h3>Modèle d’alerte critique</h3>
+            <ul class="card">
+              <li><strong>Objet :</strong> Alerte critique – [Thème] – [Chaîne]</li>
+              <li><strong>Résumé :</strong> 3 bullet points clés</li>
+              <li><strong>Impact :</strong> Audience, tonalité, risques</li>
+              <li><strong>Recommandations :</strong> Actions proposées</li>
+              <li><strong>Replay :</strong> Lien horodaté + transcript</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Ressources utiles</h3>
+            <ul>
+              <li>Guide ARCOM sur la veille audiovisuelle.</li>
+              <li>Référentiel CNIL pour l’utilisation de l’IA.</li>
+              <li>Outils open source : Whisper, FFmpeg, Elastic, Superset.</li>
+              <li>Communautés : IAB, GESTE, MediaTech Hub.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Glossaire</h3>
+            <dl>
+              <dt>Signal faible</dt>
+              <dd>Indice précoce d’un sujet susceptible de prendre de l’ampleur.</dd>
+              <dt>Transcription automatique</dt>
+              <dd>Conversion automatisée de l’audio en texte via IA.</dd>
+              <dt>Tonalité</dt>
+              <dd>Polarité d’une mention (positive, neutre, négative).</dd>
+              <dt>PCA/PRA</dt>
+              <dd>Plan de continuité / Plan de reprise d’activité.</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Service de veille médiatique audiovisuelle —
+        Manuel interne.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
